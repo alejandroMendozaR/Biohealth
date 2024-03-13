@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RespArray</title>
+
+    <script src="https://kit.fontawesome.com/f6d9fecf2a.js" crossorigin="anonymous"></script><!-- iconos -->
+
+    <link rel="stylesheet" href="stylesheets/equipo.css">
+</head>
+<body>
+    <header>
+        <button class="btnBack" onclick="regresarVentana()">
+            <i class="fa-solid fa-rotate-left"></i>
+        </button>
+    </header>
+
+    <div class="main">
+        <div class="containerImg">
+            <img src="src/img/respArray.jpg" alt="">
+            <div class="accesorios">            
+                <div>
+                    <h2>Accesorios</h2>
+                </div>
+                <ul class="elems">
+                    <li id="elem1">
+                        <img src="src/img/accesorios/Cable troncal de desfibrilación de ECG.jpg" alt="">
+                        Cable troncal de desfibrilación de ECG
+                    </li>
+                    <li id="elem2">
+                        <img src="src/img/accesorios/Clavija única 35 .png" alt="">
+                        Clavija única 3/5 derivaciones de 1.5 y 2.5 m. 
+                    </li>
+                    <li id="elem3">
+                        <img src="src/img/accesorios/Cable conductor de ECG. 3 derivaciones de un solo pin..jpg" alt="">
+                        Cable conductor de ECG. 3 derivaciones de un solo pin
+                    </li>
+                    <li id="elem4">
+                        <img src="src/img/accesorios/sensor dactilar para adulto SPO2 reutilizable..webp" alt="">
+                        Sensor dactilar para adulto SPO2 reutilizable
+                    </li>
+                    <li  id="elem5">
+                        <img src="src/img/accesorios/Cable intermedio Nellcor.jpg" alt="">
+                        Cable intermedio Nellcor
+                    </li>
+                    <li id="elem6">
+                        <img src="src/img/accesorios/tuboPANI.jpg" alt="">
+                        Tubo PANI
+                    </li>
+                    <li id="elem7">
+                        <img src="src/img/accesorios/manquitoPANIadulto.jpg" alt="">
+                        Manguito de PANI para adulto.
+                    </li>
+                    <li  id="elem8">
+                        <img src="src/img/accesorios/sensortempcutanea.jpg" alt="">
+                        Sensor de temperatura cutánea
+                    </li>
+                    <li id="elem9">
+                        <img src="src/img/accesorios/microstr.jpeg" alt="">
+                        Microstr etCO2 para adulto
+                    </li>
+                    <li id="elem10">
+                        <img src="src/img/accesorios/papel.webp" alt="">
+                        Papel de impresión (4 rollos)
+                    </li>
+                </ul>
+                <ul class="botones">
+                    <li>
+                        <button id="1" onclick="mostrarImg(1)"><img src="src/img/accesorios/Cable troncal de desfibrilación de ECG.jpg" alt=""></button>
+                    </li>
+                    <li>
+                        <button id="2" onclick="mostrarImg(2)"><img src="src/img/accesorios/Clavija única 35 .png" alt=""></button>
+                     </li>
+                    <li>
+                        <button id="3" onclick="mostrarImg(3)"><img src="src/img/accesorios/Cable conductor de ECG. 3 derivaciones de un solo pin..jpg" alt=""></button>                     
+                    </li>
+                    <li>
+                        <button id="4" onclick="mostrarImg(4)"><img src="src/img/accesorios/sensor dactilar para adulto SPO2 reutilizable..webp" alt=""></button>  
+                    </li>
+                    <li>
+                        <button id="5" onclick="mostrarImg(5)"><img src="src/img/accesorios/Cable intermedio Nellcor.jpg" alt=""></button>  
+                    </li>
+                    <li>
+                        <button id="6" onclick="mostrarImg(6)"><img src="src/img/accesorios/tuboPANI.jpg" alt=""></button>  
+                    </li>
+                    <li>
+                        <button id="7" onclick="mostrarImg(7)"><img src="src/img/accesorios/manquitoPANIadulto.jpg" alt=""></button>  
+                    </li>
+                    <li>
+                        <button id="8" onclick="mostrarImg(8)"><img src="src/img/accesorios/sensortempcutanea.jpg" alt=""></button>  
+                    </li>
+                    <li>
+                        <button id="9" onclick="mostrarImg(9)"><img src="src/img/accesorios/microstr.jpeg" alt=""></button>  
+                    </li>
+                    <li>
+                        <button id="10" onclick="mostrarImg(10)"><img src="src/img/accesorios/papel.webp" alt=""></button>  
+                    </li>
+                </ul>
+            </div> 
+        </div>
+        <div class="caracteristicas">
+            <h1>RespArray</h1>
+            <p>$116 100.00</p>
+            <p class="especificaciones">
+                El RespArray™ de Medtronic Está diseñado para áreas de atención en las que la comprobación puntual podría no ser suficiente, como en las unidades médico-quirúrgicas, o donde se necesitan parámetros adicionales, como la capnografía en sedación procesal.
+                El monitor de paciente RespArray™ presenta una conectividad sencilla y se integra perfectamente en el flujo de trabajo. Así tendrá más tiempo para concentrarse en sus pacientes.
+            </p>
+            <div class="desplegables">
+                <div>                    
+                    <h2>Funciones</h2> 
+                    <button id="btnFuncs" onclick="desplegarOPlegarFuncs()" class="botonSacar">▼</button>
+                </div>
+                <ul id="listFuncs" class="listaPlegada">
+                    Muestra hasta 13 formas de onda en una pantalla fácil de configurar y ofrece un conjunto principal de parámetros esenciales:
+                    
+                    <li>ECG de 3/5 derivaciones.</li>
+                    <li>SpO₂</li>
+                    <li>Presión arterial no invasiva (PANI).</li>
+                    <li>Respiración.</li>
+                    <li>Temperatura dual.</li>
+                </ul>
+            </div>
+            <div class="desplegables">
+                <div>
+                    <h2>Parámetros avanzados</h2> 
+                    <button id="btnParams" onclick="desplegarOPlegarParams()" class="botonSacar">▼</button>
+                </div>
+                <ul id="listParms" class="listaPlegada">
+                    <li>Tres presiones arteriales invasivas.</li>
+                    <li>etCO2 de flujo principal y secundario </li>
+                    <li>Gasto cardíaco. </li>
+                    <li>Se pueden añadir módulos de parámetros externos como SCIO, CO2 y BIS (en el modelo C y el modelo C+ tras comprar el dispositivo).</li>
+                </ul>
+            </div>
+            <a href="src/RESPARRAY_MANUAL.pdf" target="_blank">Ver el manual</a>
+            <a href="src/Garantia_RespArray.pdf" target="_blank">Aqui puedes ver la garantia</a>
+        </div>
+       
+    </div>
+
+    <button class="elBoton">Comprar</button>
+
+    <footer>
+        <i class="fa-solid fa-screwdriver-wrench"></i>  <p>Servicios de mantenimiento preventivo y correctivo incluidos</p>
+    </footer>
+
+    <script src="scripts/equipo.js"></script>
+</body>
+</html>

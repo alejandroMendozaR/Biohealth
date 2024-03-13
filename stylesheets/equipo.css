@@ -1,0 +1,236 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    margin: 0%;
+    padding: 0cap;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+}
+
+header {
+    background-color: #2a3142;
+    width: 100%;
+    height: 12vh;
+    padding: 2vh;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+header button {
+    background: none;
+    border: solid #fff 3px;
+    color: #fff;
+    border-radius: 50%;
+    width: 6vh;
+    height: 6vh;
+    font-size: 2.7vh;
+    font-weight: bolder;
+    transition: 0.3s;
+}
+header button:hover {
+    transform: scale(120%);
+    transition: 0.3s;
+}
+
+.main {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: space-around;
+    text-align: justify;
+    padding: 20px;
+}
+
+.containerImg {
+    width: 600px;
+    float: left;
+}
+.containerImg img {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.caracteristicas {
+    position: relative;
+    padding: 10px;
+    width: 500px;
+}
+.caracteristicas a{
+    display: block;
+    color: #2a3142;
+    font-weight: bold;
+    line-height: 3.5vh;
+    text-decoration: underline #2a3142 1.8px;
+    transition: 0.5s;
+}
+.caracteristicas a:hover {
+    color: #72c8ec;
+    text-decoration: underline #72c8ec 1.8px;
+
+    transition: 0.5s;
+}
+.especificaciones {
+    margin-top: 50px;
+}
+.funcs {
+    margin-top: 50px;
+    line-height: 25px;
+}
+.desplegables>div {
+    position: relative;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 4vh;
+}
+.desplegables h2 {
+    text-align: center;
+    margin: 0 1vw;
+    font-size: 20px;
+}
+.desplegables button {
+    margin: 0 0.5vw;
+    background: none;
+    border-radius: 5px;
+    color: #2a3142;
+    font-size: 2.3vh;
+    transition: 0.2s;
+}
+.desplegables button:hover {
+    background-color: #2a3142;
+    color: #fff;
+    border-color: #fff;
+    transition: 0.2s;
+    transform: scale(120%);
+}
+
+.listaPlegada {
+    overflow: hidden;
+    height: 0px;
+
+    transition: 0.3s;
+}
+
+.listaDesplegada {
+    height: auto;
+    border: #2a3142 solid 2px;
+    border-top: none;
+    border-radius: 0px 0px 10px 10px;
+    padding: 30px;
+}
+.listaDesplegada li {
+    list-style: none;
+    text-align: center;
+    margin-top: 10px;
+    line-height: 30px;
+    border-bottom: #2a3142 solid 2px;
+}
+
+.accesorios {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+    width: 100%;
+    height: 100%;
+}
+.elems {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: 400px;
+    height: 400px;
+}
+.elems li {
+    list-style: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #fff; 
+}
+.elems li img {
+    position: relative;
+    width: 60%;
+}
+
+.botones {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.botones li {
+    list-style: none;
+    position: relative;
+}
+.botones li button {
+    padding: 0%;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+}
+.botones li button:hover {
+    filter: brightness(60%);
+}
+.botones li button img{
+    width: 100%;
+    height: auto;
+}
+
+.elBoton {
+    position: fixed;
+    right: 80px;
+    bottom: 80px;
+    background-color: #2a3142;
+    border: #2a3142 2px solid;
+    border-radius: 30px;
+    color: #fff ;
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+.elBoton:hover {
+    transform: scale(120%);
+    box-shadow: 0px 0px 10px #2a3142;
+    transition: 0.3s;
+}
+
+footer {
+    width: 95%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: solid 2px #2a3142;
+    color: #2a3142;
+    font-size: 18px;
+}
+footer p {
+    margin-left: 10px;
+}
